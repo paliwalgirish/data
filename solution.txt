@@ -1,0 +1,90 @@
+// Practice 2-1
+// 2-1.2
+byte x = 2, y = 3, z= 5;
+z = (byte)(x+y);
+float a = (float)x/y;
+double b = (double)x/y;
+b = a;
+float c = Math.round(b*1000)/1000F;
+
+// 2-1.3
+char a1 = 'a', a2='\141', a3='\u0061';
+int i = a1;
+int i1 = 0141, i2= 0x61;
+char a4 = (char)i1;
+
+// 2-1.4
+char someChar = 'k';
+boolean isEven = (someChar%2 == 0);
+
+// 2-1.5
+char someChar = 'k';
+char nextChar = (char)(someChar+1);
+char nextChar = ++someChar;
+someChar = 'b';
+--someChar;
+
+// 2-1.6
+char upperA = 'A', lowerA = 'a';
+int distance = lowerA-upperA;
+someChar = 'h';
+char upperSomeChar = (char)(someChar-32);
+
+// Practice 2-2
+// 2-2.1
+char someChar = 'q';
+if (someChar >= 'a' && someChar <= 'z') {
+  someChar -= 32;
+}else{
+  someChar += 32;
+}
+someChar
+if (someChar >= 'a' && someChar <= 'z') {
+  someChar -= 32;
+} else {
+  if (someChar >= 'A' && someChar <= 'Z') {
+    someChar += 32;
+  }
+}
+someChar
+
+// 2-2.2
+someChar = (someChar >= 'a' && someChar <= 'z') ? 
+(char)(someChar-32) : (char)(someChar+32);
+int period = 1;
+float amount = 10;
+float rate = 0.05F;
+switch (period) {
+  case 3:
+    amount += amount * rate;
+  case 2:
+    amount += amount * rate;
+  case 1:
+    amount += amount * rate;
+}
+amount
+int period = 3;
+switch (period) {
+  case 3:
+    amount += amount * rate;
+  case 2:
+    amount += amount * rate;
+  case 1:
+    amount += amount * rate;
+}
+amount
+
+// 2-2.3
+int period = 3;
+switch (period) {
+  case 4:
+    amount += amount * 0.2F;
+    break;
+  case 3:
+    amount += amount * rate;
+  case 2:
+    amount += amount * rate;
+  case 1:
+    amount += amount * rate;
+}
+amount
